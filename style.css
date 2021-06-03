@@ -1,0 +1,21 @@
+body{
+    background-color: lightgray;
+}
+
+h3{
+    font-style: italic;
+    font-size: 45 px;
+    font-weight: bolder;
+    color: turquoise;
+}
+
+h4{
+    font-style: italic;
+    font-size: 35 px;
+    font-weight: bolder;
+    color: turquoise;
+}
+
+img{
+    image-resolution: 200 px x 200 px;
+}
