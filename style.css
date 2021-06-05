@@ -1,3 +1,7 @@
+*{
+    box-sizing: inherit;
+}
+
 body{
     background-color: lightgray;
 }
