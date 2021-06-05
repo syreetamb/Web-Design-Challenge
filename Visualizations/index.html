@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- CSS only -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloudiness</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    
-    
+    <title>Web Visualization</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- <link rel="stylesheet"  type= "text/css" href="style.css"> -->
 </head>
+
 <body style='background-color: lightgray;'>
     <nav class="navbar p-0 navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
@@ -48,25 +51,59 @@
     <div class="container mt-4">
         <div class="row">
             <div class="col-md-7 me-4 col-sm-12 bg-white">
-              
-                <h3 class="text-info">Cloudiness</h3>
+                <h3 class="text-info fw-bold">Summary: Latitude vs. X</h3>
+                <hr>
+                <img src="Resources/assets/images/Fig1.png" class="w-50 float-start" alt="Max Temperature">
+
+                <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To
+                    accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on
+                    over 500
+                    cities.
+                </p>
+                <p>
+                    After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs.
+                    latitude.
+                    Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides
+                    the
+                    source data and visualizations created as part of the analysis, as well as explanations and
+                    descriptions of
+                    any trends and correlations witnessed.
+                </p>
+
+            </div>
+            <div class="col-md-4 col-sm-12 bg-white">
+                <h4 class="text-info">Visualizations</h4>
                 <hr>
                 <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <a href="Visualizations\temp.html">
+                            <img src="Resources/assets/images/Fig1.png" alt="Max Temperature" class="w-100">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <a href="Visualizations\humidity.html">
+                            <img src="Resources/assets/images/Fig2.png" alt="Humidity" class="w-100">
+                        </a>
+                    </div>
                     <div class="col-md-6 col-sm-12">
                         <a href="Visualizations\cloudiness.html">
                             <img src="Resources/assets/images/Fig3.png" alt="Cloudiness" class="w-100">
                         </a>
                     </div>
-                    <p>On this day you can see quite a lot of cities show cloudiness at zero percent.</p>
+                    <div class="col-md-6 col-sm-12">
+                        <a href="Visualizations\wind.html">
+                            <img src="Resources/assets/images/Fig4.png" alt="Wind Speed" class="w-100">
+                        </a>
+                    </div>
                 </div>
-            </div>    
+            </div>
         </div>
     </div>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-    
-
-    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
